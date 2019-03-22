@@ -1,0 +1,238 @@
+@import url(//db.onlinewebfonts.com/c/ea9a35ccb808c60d13a76d592c6e8216?family=Stormfaze);
+
+@font-face { 
+    font-family: StormFaze; 
+    src: url('stormfaze.ttf'); 
+} 
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+main {
+    background: url(love-death-robots.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#masthead {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+#masthead img {
+    position: relative;
+    height: 100%;
+    height: 150px;
+    width: 150px;
+}
+
+.playbutton {
+    position: relative;
+    display: block;
+    margin-top: 0px;
+    cursor: pointer;
+    -webkit-transition: all .9s ease;
+    -moz-transition: all .9s ease;
+    -o-transition: all .9s ease;
+    transition: all .9s ease;
+    letter-spacing: 0.03em;
+    font-size: 3em;
+    color: #fff;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playbutton.hidden {
+    opacity: 0;
+}
+
+main {
+    position: absolute;
+    height: 100vh;
+}
+
+.hero {
+    height: 100vh;
+}
+
+.table {
+    margin-bottom: 10%;
+}
+
+#social-media-links {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    right: 0;
+    color: white;
+    z-index: 19;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+
+.media-link a {
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.playbutton .icon:after {
+    background: url(image.png) center center no-repeat;
+    background-size: 1.2em;
+    content: "";
+    width: 1.2em;
+    height: 1.2em;
+    position: relative;
+    display: inline-block;
+    margin-left: 2px;
+    webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+  
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer img {
+    height: 200px;
+}
+
+.absolute {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.table-cell {
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.2);
+    padding: 20px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    border-radius: 50%;
+    display: table-cell;
+}
+
+@keyframes fade-out {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.fade-in {
+    animation-name: fade-out;
+    animation-iteration-count: 1;
+    animation-duration: 500ms;
+}
+
+.new-announcement {
+    font-family: 'Stormfaze', sans-serif;
+    position: absolute;
+    bottom: 10%;
+    right: 2%;
+    width: 30%;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+}
+
+.new-announcement:before{
+    content:attr(data-text);
+    position:absolute;
+    left:-2px;
+    text-shadow:1px 0 blue; 
+    top:0;
+    color:white;
+    background:transparent;
+    overflow:hidden;
+    clip:rect(0,900px,0,0); 
+    animation:glitch-effect 3s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-effect {
+    0% {
+      clip: rect(96px, 9999px, 37px, 0);
+    }
+    5% {
+      clip: rect(47px, 9999px, 34px, 0);
+    }
+    10% {
+      clip: rect(8px, 9999px, 4px, 0);
+    }
+    15% {
+      clip: rect(16px, 9999px, 27px, 0);
+    }
+    20% {
+      clip: rect(57px, 9999px, 65px, 0);
+    }
+    25% {
+      clip: rect(73px, 9999px, 53px, 0);
+    }
+    30% {
+      clip: rect(69px, 9999px, 9px, 0);
+    }
+    35% {
+      clip: rect(78px, 9999px, 16px, 0);
+    }
+    40% {
+      clip: rect(87px, 9999px, 55px, 0);
+    }
+    45% {
+      clip: rect(30px, 9999px, 12px, 0);
+    }
+    50% {
+      clip: rect(69px, 9999px, 14px, 0);
+    }
+    55% {
+      clip: rect(94px, 9999px, 25px, 0);
+    }
+    60% {
+      clip: rect(62px, 9999px, 88px, 0);
+    }
+    65% {
+      clip: rect(11px, 9999px, 86px, 0);
+    }
+    70% {
+      clip: rect(55px, 9999px, 20px, 0);
+    }
+    75% {
+      clip: rect(53px, 9999px, 84px, 0);
+    }
+    80% {
+      clip: rect(80px, 9999px, 23px, 0);
+    }
+    85% {
+      clip: rect(32px, 9999px, 48px, 0);
+    }
+    90% {
+      clip: rect(99px, 9999px, 51px, 0);
+    }
+    95% {
+      clip: rect(74px, 9999px, 83px, 0);
+    }
+    100% {
+      clip: rect(76px, 9999px, 7px, 0);
+    }
+  }
+  
