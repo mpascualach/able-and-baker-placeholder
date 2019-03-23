@@ -101,14 +101,22 @@ footer img {
     text-align: center;
     color: white;
     font-size: 22px;
-    -webkit-animation: flickerAnimation 2s infinite;
-   -moz-animation: flickerAnimation 2s infinite;
-   -o-animation: flickerAnimation 2s infinite;
-    animation: flickerAnimation 2s infinite;
+    -webkit-animation: flickerAnimation 3s infinite;
+   -moz-animation: flickerAnimation 3s infinite;
+   -o-animation: flickerAnimation 3s infinite;
+    animation: flickerAnimation 3s infinite;
 }
 
 @keyframes flickerAnimation {
     0%   { opacity:1; }
+    10%   { opacity:1; }
+    20%   { opacity:1; }
+    30%   { opacity:1; }
+    40%   { opacity:1; }
+    50%   { opacity:1; }
+    60%   { opacity:0; }
+    70%   { opacity:1; }
+    80%   { opacity:1; }
     90%  { opacity:0; }
     100% { opacity:1; }
 }
