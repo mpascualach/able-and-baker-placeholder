@@ -10,6 +10,8 @@ html, body {
     width: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
+    position: absolute;
+    margin: 0;
 }
 
 main {
@@ -62,23 +64,24 @@ main {
 
   
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 footer img {
-    height: 200px;
+  height: 200px;
+  margin-top: 10%;
 }
 
 .absolute {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 /* @keyframes fade-out {
